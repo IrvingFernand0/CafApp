@@ -24,7 +24,7 @@ export const PantallaProto = () => {
 
 <Image 
           style = {estilos.logo}
-          source = {require('C:/Users/Fox/Desktop/Desarrollo Movil/Proto2/cafe.png')}
+          source = {require('../imagenes/cafe.png')}
       />
       <Text style={estilos.bienvenidos} >BIENVENIDOS</Text>
 <Separator />
