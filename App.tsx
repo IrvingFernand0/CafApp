@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { PantallaProto } from './src/pantallas/PantallaProto';
 
-export const App = () => {
+
+const App = () => {
   return (
-    <div>App</div>
+    <PantallaProto />
   )
 }
 
-
 export default App;
+
+
