@@ -15,4 +15,3 @@
 
 ## Objetivo General
 
-## Objetivo Especifico
