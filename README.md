@@ -15,3 +15,7 @@
 
 ## Objetivo General
 
+## Objetivos Específicos
+-	Desarrollar una Aplicación móvil capaz de gestionar peticiones propias de un servicio de cafetería escolar.
+-	Incorporar un listado de productos y precios para las peticiones en tiempo real del alumnado y docentes.
+-	Establecer una base de datos para uso exclusivo de la comunidad tecnológica del Instituto.
