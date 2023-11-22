@@ -10,7 +10,7 @@
   | Irving Fernando Reyes Pacheco| 
   | Diego Alexis Carlos Cruz|
   | Dario Sánchez Linton| 
-  | Edwin| 
+  | Edwin Ortiz Cruz| 
 
 
 ## Objetivo General
