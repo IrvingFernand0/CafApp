@@ -10,7 +10,7 @@ import {
   TextInput,
   Image,
 } from 'react-native';
-import {MenuLateral} from '../navegacion/MenuLateral'
+
 
 
 

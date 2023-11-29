@@ -8,6 +8,7 @@ import PantallaNotificaciones from './PantallaNotificaciones';
 // import { MenuLateral } from '../navegacion/MenuLateral';
 import PantallaInicio from './PantallaInicio';
 import PantallaMenu from './PantallaMenu';
+import Tabs from './Tabs';
 
  
 const Drawer = createDrawerNavigator();
@@ -16,6 +17,7 @@ const Drawer = createDrawerNavigator();
 const MenuLateral = ({navigation}) => {
   return (
     <Drawer.Navigator>
+      {/* <Drawer.Screen name='Tabs' component={Tabs} /> */}
     <Drawer.Screen name="PantallaMenu"
                    component={PantallaMenu}
                    options={{title:'Menu',

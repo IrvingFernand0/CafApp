@@ -3,18 +3,21 @@ import React from 'react'
 import { estilos } from '../temas/EstilosGlobales'
 import TouchableNativeFeedback from 'react-native-gesture-handler/lib/typescript/components/touchables/TouchableNativeFeedback.android'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
+import { createDrawerNavigator } from '@react-navigation/drawer'
 
-
+// const Drawer = createDrawerNavigator();
+// const BottomTabAndroid = createMaterialBottomTabNavigator();
 
 const PantallaMenu = ({navigation}) => {
   return (
-    <SafeAreaView style={{flex: 1}}>
+       <SafeAreaView style={{flex: 1}}>
       <View style={estilos.container}>
       <ImageBackground source={require('../imagenes/fondoMenu4.jpg')} resizeMode="cover" style={estilos.image}>
       {/* <Text style={estilos.text}>Inside</Text> */}
     
         <TouchableOpacity
-          onPress={() => navigation.navigate('Comidas')}
+          onPress={() => navigation.navigate('Tabs')}
           // onPress={() => Alert.alert('ya estufas')}
           // style={styles.buttonFacebookStyle}
           activeOpacity={0.5}>
@@ -32,7 +35,7 @@ const PantallaMenu = ({navigation}) => {
         {/* FIN BOTON 1 */}
         
         <TouchableOpacity
-          onPress={() => navigation.navigate('Bebidas')}
+          onPress={() => navigation.navigate('TabsBebidas')}
           // style={styles.buttonGPlusStyle}
           activeOpacity={0.5}>
           <Image

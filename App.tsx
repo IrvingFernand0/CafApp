@@ -13,6 +13,16 @@ import MenuLateral from './src/pantallas/MenuLateral';
 import BotonImagen from './src/pantallas/BotonImagen';
 import PantallaBebidas from './src/pantallas/PantallaBebidas';
 import PantallaComidas from './src/pantallas/PantallaComidas';
+import PantallaCombos from './src/pantallas/PantallaCombos';
+import PantallaDesayunos from './src/pantallas/PantallaDesayunos';
+import Tabs from './src/pantallas/Tabs';
+import TabsBebidas from './src/pantallas/TabsBebidas';
+// import pantallaNaturales from './src/pantallas/PantallaNaturales';
+// import pantallaMalteadas from './src/pantallas/PantallaMalteadas';
+import PantallaRefrescos from './src/pantallas/PantallaRefrescos';
+import PantallaNaturales2 from './src/pantallas/PantallaNaturales2';
+import PantallaMalteadas2 from './src/pantallas/PantallaMalteadas2';
+
 
 
 
@@ -23,6 +33,7 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     // <BotonImagen /> 
+    // <PantallaCombos />
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Inicio">
         <Stack.Screen name="Inicio" 
@@ -48,6 +59,11 @@ function App() {
         <Stack.Screen name="Ajustes" component={PantallaAjustes} />
         <Stack.Screen name="Bebidas" component={PantallaBebidas} />
         <Stack.Screen name="Comidas" component={PantallaComidas} />
+        <Stack.Screen name="Tabs" component={Tabs} />
+        <Stack.Screen name="TabsBebidas" component={TabsBebidas} />
+        <Stack.Screen name="Naturales" component={PantallaNaturales2} />
+        <Stack.Screen name="Maltas" component={PantallaMalteadas2} />
+        <Stack.Screen name="Soda" component={PantallaRefrescos} />
         <Stack.Screen name="Menu" component={PantallaMenu}
                       options={{ title: 'Menú',
                       headerTitleAlign: 'center',

@@ -2,7 +2,7 @@ import { View, Text, ImageBackground, Image, TouchableOpacity } from 'react-nati
 import React from 'react'
 import { estilos } from '../temas/EstilosGlobales'
 
-const PantallaBebidas = ({navigation}) => {
+const PantallaNaturales2 = ({navigation}) => {
   return (
     <View style={estilos.container}>
       <ImageBackground source={require('../imagenes/fondoCafe.jpg')} resizeMode="cover" style={estilos.image}>
@@ -32,4 +32,4 @@ const PantallaBebidas = ({navigation}) => {
   )
 }
 
-export default PantallaBebidas
+export default PantallaNaturales2
