@@ -20,8 +20,9 @@ Desarrollar una Aplicación móvil capaz de gestionar peticiones propias de un s
 ## Objetivos Específicos
 
 -	Incorporar un listado de productos y precios para las peticiones en tiempo real del alumnado y docentes.
--	Establecer una base de datos para uso exclusivo de la comunidad tecnológica del Instituto.
--  Estructurar un Login y una sección de Invitado que contendrá la vista del menú pero sin la capacidad de ordenar.
+-	Diseño básico de la App.	
+-  Estructurar la distribución de los componentes.
+-  Introducir nombres y precios de los productos.
 -  Anexar lineamientos para uso correcto del servicio 
 -  Ejecutar de pruebas y detección de errores
 -  Correción de errores, depuración y actualización del proyecto.
