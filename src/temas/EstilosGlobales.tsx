@@ -29,6 +29,9 @@ export const estilos = StyleSheet.create({
         backgroundColor: 'black'
         
       },
+      container2: {
+        flexDirection: 'row'
+      },
       horizontal: {
         flexDirection: 'row',
         justifyContent: 'space-around',
@@ -115,6 +118,16 @@ export const estilos = StyleSheet.create({
         marginTop: 90,
         marginBottom: 60
       },
+      buttonImageIconStyle3: {
+        padding: 10,
+        margin: 50,
+        height: 80,
+        width: 80,
+        // resizeMode: 'stretch',
+        alignSelf: 'center',
+        marginTop: -60,
+        marginBottom: 100
+      },
       buttonTextStyle: {
         color: '#fff',
         marginBottom: 4,
@@ -143,5 +156,23 @@ export const estilos = StyleSheet.create({
         marginTop: -100,
         marginBottom: 60,
         fontSize: 30
+      },
+      textoMenu2: {
+        color: 'black',
+        alignSelf: 'center',
+        // justifyContent: 'center',
+        textAlign:'center',
+        marginTop: -100,
+        marginBottom: 80,
+        fontSize: 20
+      },
+      textoMenu3: {
+        color: 'white',
+        alignSelf: 'center',
+        // justifyContent: 'center',
+        textAlign:'center',
+        marginTop: -100,
+        marginBottom: 80,
+        fontSize: 20
       }
 })

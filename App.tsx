@@ -59,8 +59,18 @@ function App() {
         <Stack.Screen name="Ajustes" component={PantallaAjustes} />
         <Stack.Screen name="Bebidas" component={PantallaBebidas} />
         <Stack.Screen name="Comidas" component={PantallaComidas} />
-        <Stack.Screen name="Tabs" component={Tabs} />
-        <Stack.Screen name="TabsBebidas" component={TabsBebidas} />
+        <Stack.Screen name="Tabs" component={Tabs} 
+                      options={{title:'Comidas',
+                      headerTitleAlign: 'center',
+                      headerStyle:{
+                        backgroundColor:'#f27435'
+                      }}}/>
+        <Stack.Screen name="TabsBebidas" component={TabsBebidas}
+                      options={{title:'Bebidas',
+                      headerTitleAlign: 'center',
+                      headerStyle:{
+                        backgroundColor:'#24c0eb'
+                      }}}/>
         <Stack.Screen name="Naturales" component={PantallaNaturales2} />
         <Stack.Screen name="Maltas" component={PantallaMalteadas2} />
         <Stack.Screen name="Soda" component={PantallaRefrescos} />

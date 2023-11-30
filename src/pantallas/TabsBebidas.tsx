@@ -9,10 +9,16 @@ const Tab = createMaterialTopTabNavigator();
 
 function TabsBebidas({navigation}) {
   return (
-    <Tab.Navigator>
-      <Tab.Screen name="pantallaNaturales" component={PantallaNaturales2} />
-      <Tab.Screen name="PantallaRefrescos" component={PantallaRefrescos} />
-      <Tab.Screen name="PantallaMalteadas" component={PantallaMalteadas2} />
+    <Tab.Navigator
+    screenOptions={{
+      tabBarLabelStyle: { fontSize: 12, fontStyle:'normal', color: 'red',  },
+      // tabBarItemStyle: { width: 100 },
+      tabBarStyle: { backgroundColor: 'powderblue' },
+    }}
+    >
+      <Tab.Screen name="pantallaNaturales" component={PantallaNaturales2} options={{title:'Naturales'}} />
+      <Tab.Screen name="PantallaRefrescos" component={PantallaRefrescos} options={{title:'Refrescos'}} />
+      <Tab.Screen name="PantallaMalteadas" component={PantallaMalteadas2} options={{title:'Malteadas'}} />
     </Tab.Navigator>
   );
 }

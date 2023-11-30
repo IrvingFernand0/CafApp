@@ -19,7 +19,7 @@ const TabsAndroid = () => {
     return (
       <BottomTabAndroid.Navigator>
         <BottomTabAndroid.Screen name="PantallaDesayunos" options={{title: 'Desayunos'}} component={PantallaDesayunos} />
-        <BottomTabAndroid.Screen name="PantallaComida" options={{title: 'Comidas'}} component={PantallaComidas} />
+        <BottomTabAndroid.Screen name="PantallaComida" options={{title: 'Antojos'}} component={PantallaComidas} />
         <BottomTabAndroid.Screen name="PantallaCombos" options={{title: 'Combos'}} component={PantallaCombos} />
       </BottomTabAndroid.Navigator>
     );
