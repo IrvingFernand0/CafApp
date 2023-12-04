@@ -7,7 +7,7 @@ const PantallaNaturales2 = ({navigation}) => {
     <View style={estilos.container}>
       <ImageBackground source={require('../imagenes/fondoNat.jpg')} resizeMode="cover" style={estilos.image}>
       
-      {/* -------------------PRIMERA FILA DE BEBIDAS--------------------- */}
+      {/* -------------------PRIMERA FILA DE NATURALES--------------------- */}
       <View style={estilos.container2}>
 
 <TouchableOpacity
@@ -41,7 +41,7 @@ const PantallaNaturales2 = ({navigation}) => {
 </TouchableOpacity>
 </View>
 
-{/* -----------------------SEGUNDA FILA DE BEBIDAS----------------------------- */}
+{/* -----------------------SEGUNDA FILA DE NATURALES----------------------------- */}
 <View style={estilos.container2}>
 
 <TouchableOpacity
@@ -74,7 +74,7 @@ const PantallaNaturales2 = ({navigation}) => {
   </Text> */}
 </TouchableOpacity>
 
-{/* --------------------TERCERA FILA DE BEBIDAS ---------------------*/}
+{/* --------------------TERCERA FILA DE NATURALES ---------------------*/}
 </View>
 <View style={estilos.container2}>
 

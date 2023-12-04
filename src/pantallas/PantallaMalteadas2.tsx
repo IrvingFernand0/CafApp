@@ -1,9 +1,13 @@
 import { View, Text, ImageBackground, Image, TouchableOpacity, Alert } from 'react-native'
 import React from 'react'
 import { estilos } from '../temas/EstilosGlobales'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import { ScrollView } from 'react-native-gesture-handler'
 
 const PantallaNaturales2 = ({navigation}) => {
   return (
+    // <SafeAreaView>
+    //   <ScrollView>
     <View style={estilos.container}>
       <ImageBackground source={require('../imagenes/fondoMaltas.jpg')} resizeMode="cover" style={estilos.image}>
       
@@ -120,6 +124,8 @@ const PantallaNaturales2 = ({navigation}) => {
         
       </ImageBackground>
     </View>
+    // {/* </ScrollView>
+    // </SafeAreaView> */}
   )
 }
 

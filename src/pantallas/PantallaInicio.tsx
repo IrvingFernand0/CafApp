@@ -1,6 +1,8 @@
 import React from 'react'
 import { estilos } from '../temas/EstilosGlobales'
 import 'react-native-gesture-handler';
+import appFirebase from '../../credenciales';
+import {getAuth, signInWithEmailAndPassword} from 'firebase/auth'
 import {  
   Button,
   View,
@@ -9,20 +11,38 @@ import {
   Alert,
   TextInput,
   Image,
+  TouchableOpacity,
 } from 'react-native';
-
+import { Props } from 'react-native-paper/lib/typescript/core/PaperProvider';
 
 
 
 // interface Props extends StackScreenProps<any, any>{};
-
+const auth = getAuth(appFirebase)
 const Separator = () => <View style={estilos.separador} />;
 
 
 
-const PantallaInicio = ({navigation}) => {
+const PantallaInicio = ( props) => {
 
-    const [text, onChangeText] = React.useState('');
+    // const [text, onChangeText] = React.useState('');
+    // const [texto, onChangeTexto] = React.useState('');
+
+    //creamos la variable de estado
+    const [email, setEmail] = React.useState('');
+    const [password, setPassword] = React.useState('');
+
+    const logueo = async () => {
+      try {
+        await signInWithEmailAndPassword(auth, email, password)
+        Alert.alert('Iniciando sesión')
+        props.navigation.navigate('Lateral')
+        
+      } catch (error) {
+        console.log(error);
+        Alert.alert('Error', 'El usuario o la contraseña son incorrectos')
+      }
+    }
 
   return (
 <SafeAreaView style={estilos.container}>
@@ -39,10 +59,23 @@ const PantallaInicio = ({navigation}) => {
 <View>     
         <TextInput
         style={estilos.entrada}
-        onChangeText={onChangeText}
-        value={text}
+        onChangeText={(text) => setEmail(text)}
+        // value={text}
         placeholderTextColor={'black'}
-        placeholder="Número de Control"
+        placeholder="Correo Institucional"
+        //textAlign='center'
+        
+        />      
+</View>
+
+<View>     
+        <TextInput
+        style={estilos.entrada}
+        onChangeText={(text) => setPassword(text)}
+        // value={texto}
+        placeholderTextColor={'black'}
+        placeholder="Contraseña"
+        secureTextEntry={true}
         //textAlign='center'
         />      
 </View>
@@ -54,12 +87,13 @@ const PantallaInicio = ({navigation}) => {
       <Text style={estilos.titulo}>
         Al ingresar aceptas nuestros acuerdos y condiciones.
       </Text>
-      <Button
-        title="INGRESAR"
-        color="#f194ff"
-        onPress={() => navigation.navigate('Lateral')}
+      <TouchableOpacity        
+        style={estilos.botonIngresar}
+        onPress={logueo}
         // onPress = {() => navigation.navigate('Pagina2Screen')}
-      />
+        >
+          <Text style={estilos.texto2}>INGRESAR</Text>
+        </TouchableOpacity>
     </View>
 
 {/* Tercer separador */}
@@ -67,7 +101,7 @@ const PantallaInicio = ({navigation}) => {
           
 <View style={estilos.ajustarTexto}>
         <Button
-          title="Invitado"
+          title="   Invitado   "
           // onPress = {() => navigation.navigate('Invitado')}
           onPress={() => navigation.navigate('Invi')}
         />

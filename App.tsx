@@ -39,16 +39,17 @@ function App() {
         <Stack.Screen name="Inicio" 
                       component={PantallaInicio}
                       options={{ title: 'CoffApp',
-                      headerShown: false,
+                      // headerShown: false,
                       headerTitleAlign: 'center',
                       headerStyle: {
-                           backgroundColor: 'purple',
+                           backgroundColor: 'black',
                         },
                       // headerTintColor: '#fff',
                       headerTitleStyle: {
                         // fontFamily: 'Cochin',
                         fontWeight: 'bold',
-                        color:'red',
+                        color:'purple',
+                        fontSize: 50
 
                       },
                        }}

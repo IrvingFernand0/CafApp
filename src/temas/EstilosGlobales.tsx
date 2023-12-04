@@ -16,6 +16,14 @@ export const estilos = StyleSheet.create({
         // marginTop: 100,
         
     },
+    texto2: {
+      fontSize: 15,
+      textAlign: 'center',
+      color: 'white',
+      margin: 10
+      // marginTop: 100,
+      
+  },
     boton: {
         alignItems: 'center',
         backgroundColor: 'purple',
@@ -43,7 +51,8 @@ export const estilos = StyleSheet.create({
         borderWidth: 1,
         padding: 10,
         backgroundColor: 'white',
-        color: 'blue'
+        color: 'blue',
+        borderRadius: 30
        },
       logo: {
         alignSelf: 'center',
@@ -174,5 +183,39 @@ export const estilos = StyleSheet.create({
         marginTop: -100,
         marginBottom: 80,
         fontSize: 20
+      },
+      avatarContainer:{
+        alignItems: 'center',
+        marginTop: 20
+      },
+      avatar: {
+      width: 150,
+      height: 150,
+      borderRadius: 100
+      },
+      menuContainer:{
+      marginVertical: 30,
+      marginHorizontal: 20,
+      // alignItems: 'center'
+      },    
+      menuTexto:{
+      fontSize: 20,
+      color: 'purple'
+      },
+      menuBoton:{
+      marginVertical: 10
+      },
+      botonIngresar: {
+        alignItems: 'center',
+        backgroundColor:'#f194ff',
+        borderRadius: 30,
+        // width: 30
+        height:40,
+        marginHorizontal: 10
+
       }
+
+
+
+
 })
