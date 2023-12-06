@@ -10,7 +10,7 @@ import { colores } from '../temas/EstilosGlobales';
 import Icon from 'react-native-vector-icons/Ionicons';
 import PantallaComidas from './PantallaComidas';
 
-
+// SE CREA EL OBJETO BottomTabAndroid PARA CREAR PESTAÑAS INFERIORES
 const BottomTabAndroid = createMaterialBottomTabNavigator();
 
 const Tabs = ({navigation}) =>{
@@ -53,6 +53,7 @@ const TabsAndroid = () => {
     inactiveColor="#3e2465"
     barStyle={{ backgroundColor: colores.third }}
       >
+        {/* PESTAÑAS PARA SECCIONAR LOS TIPOS DE COMIDAS */}
         <BottomTabAndroid.Screen name="PantallaDesayunos" options={{title: 'Desayunos'}} component={PantallaDesayunos} />
         <BottomTabAndroid.Screen name="PantallaComida" options={{title: 'Antojos'}} component={PantallaComidas} />
         <BottomTabAndroid.Screen name="PantallaCombos" options={{title: 'Combos'}} component={PantallaCombos} />
@@ -60,25 +61,4 @@ const TabsAndroid = () => {
     );
   }
   
-  
-
-
-
-// const Tabs = ({navigation}) => {
-//   return (
-//     <View>
-
-//     <BottomTabAndroid.Navigator>
-//         <BottomTabAndroid.Screen name="PantallaDesayunos" options={{title: 'Desayunos'}} component={PantallaDesayunos} />
-//         <BottomTabAndroid.Screen name="PantallaComida" options={{title: 'Comidas'}} component={PantallaComida} />
-//         <BottomTabAndroid.Screen name="PantallaCombos" options={{title: 'Combos'}} component={PantallaCombos} />
-//     </BottomTabAndroid.Navigator>
-
-//     </View>
-        
-    
-    
-//   )
-// }
-
-export default Tabs
+  export default Tabs
