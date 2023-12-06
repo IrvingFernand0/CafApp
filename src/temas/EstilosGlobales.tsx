@@ -2,7 +2,8 @@ import { StyleSheet } from "react-native"
 
 export const colores = {
   primary: '#5856D6',
-  second: 'red'
+  second: 'red',
+  third: '#59b390'
 };
 
 
@@ -24,6 +25,15 @@ export const estilos = StyleSheet.create({
       // marginTop: 100,
       
   },
+  texto3: {
+    fontSize: 40,
+    textAlign: 'center',
+    color: 'white',
+    margin: 10,
+    // marginTop: 100,
+    fontWeight: 'bold'
+    
+},
     boton: {
         alignItems: 'center',
         backgroundColor: 'purple',
@@ -173,7 +183,8 @@ export const estilos = StyleSheet.create({
         textAlign:'center',
         marginTop: -100,
         marginBottom: 80,
-        fontSize: 20
+        fontSize: 20,
+        fontWeight: 'bold'
       },
       textoMenu3: {
         color: 'white',
@@ -182,7 +193,8 @@ export const estilos = StyleSheet.create({
         textAlign:'center',
         marginTop: -100,
         marginBottom: 80,
-        fontSize: 20
+        fontSize: 20,
+        fontWeight: 'bold'
       },
       avatarContainer:{
         alignItems: 'center',

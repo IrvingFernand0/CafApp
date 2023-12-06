@@ -49,7 +49,7 @@ function App() {
                         // fontFamily: 'Cochin',
                         fontWeight: 'bold',
                         color:'purple',
-                        fontSize: 50
+                        fontSize: 50,                        
 
                       },
                        }}

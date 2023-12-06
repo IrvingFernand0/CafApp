@@ -14,8 +14,8 @@ const PantallaMenu = ({navigation}) => {
        <SafeAreaView style={{flex: 1}}>
       <View style={estilos.container}>
       <ImageBackground source={require('../imagenes/fondoMenu4.jpg')} resizeMode="cover" style={estilos.image}>
-      {/* <Text style={estilos.text}>Inside</Text> */}
     
+        {/* ---------------------BOTÓN PARA INGRESAR AL MENU COMIDAS---------------------- */}
         <TouchableOpacity
           onPress={() => navigation.navigate('Tabs')}
           // onPress={() => Alert.alert('ya estufas')}
@@ -34,6 +34,7 @@ const PantallaMenu = ({navigation}) => {
         </TouchableOpacity> 
         {/* FIN BOTON 1 */}
         
+        {/* ------------------BOTÓN PARA INGRESAR AL MENÚ BEBIDAS-------------------------- */}
         <TouchableOpacity
           onPress={() => navigation.navigate('TabsBebidas')}
           // style={styles.buttonGPlusStyle}

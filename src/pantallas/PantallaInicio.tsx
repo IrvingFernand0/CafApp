@@ -23,7 +23,7 @@ const Separator = () => <View style={estilos.separador} />;
 
 
 
-const PantallaInicio = ( props) => {
+const PantallaInicio = (props) => {
 
     // const [text, onChangeText] = React.useState('');
     // const [texto, onChangeTexto] = React.useState('');
@@ -99,7 +99,7 @@ const PantallaInicio = ( props) => {
 {/* Tercer separador */}
 <Separator />
           
-<View style={estilos.ajustarTexto}>
+{/* <View style={estilos.ajustarTexto}>
         <Button
           title="   Invitado   "
           // onPress = {() => navigation.navigate('Invitado')}
@@ -110,7 +110,7 @@ const PantallaInicio = ( props) => {
           onPress = {() => navigation.navigate('Detalles')}
         //   onPress={() => Alert.alert('Right button pressed')}
         />
-</View>
+</View> */}
     
 </SafeAreaView>
   )

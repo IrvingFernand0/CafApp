@@ -41,7 +41,7 @@ const PantallaNaturales2 = ({navigation}) => {
 </TouchableOpacity>
 </View>
 
-{/* -----------------------SEGUNDA FILA DE BEBIDAS----------------------------- */}
+{/* -----------------------SEGUNDA FILA DE REFRESCOS----------------------------- */}
 <View style={estilos.container2}>
 
 <TouchableOpacity
@@ -74,7 +74,7 @@ const PantallaNaturales2 = ({navigation}) => {
   </Text> */}
 </TouchableOpacity>
 
-{/* --------------------TERCERA FILA DE BEBIDAS ---------------------*/}
+{/* --------------------TERCERA FILA DE REFRESCOS ---------------------*/}
 </View>
 <View style={estilos.container2}>
 
